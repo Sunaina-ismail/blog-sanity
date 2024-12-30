@@ -1,4 +1,4 @@
-// Query for all posts
+
 export const postQuery = `
   *[_type == "blogPost"]{
     title,
@@ -15,7 +15,6 @@ export const postQuery = `
   }
 `;
 
-// Query for post by slug
 export const postQueryBySlug = `
   *[_type == "blogPost" && slug.current == $slug][0]{
     title,
