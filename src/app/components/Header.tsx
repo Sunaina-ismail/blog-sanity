@@ -61,10 +61,10 @@ const Header = () => {
               <Link href="#skincare" className="hover:bg-[#e6d2c9] px-4 py-3 rounded-md">
                 SkinCare
               </Link>
-              <Link href="#products" className="hover:bg-[#e6d2c9] px-4 py-3 rounded-md">
+              <Link href="#products-&-brands" className="hover:bg-[#e6d2c9] px-4 py-3 rounded-md">
                 Products & Brands
               </Link>
-              <Link href="#health" className="hover:bg-[#e6d2c9] px-4 py-3 rounded-md">
+              <Link href="#health-&-advice" className="hover:bg-[#e6d2c9] px-4 py-3 rounded-md">
                 Health & Advice
               </Link>
               <Link href="#clinic" className="hover:bg-[#e6d2c9] px-4 py-3 rounded-md">
