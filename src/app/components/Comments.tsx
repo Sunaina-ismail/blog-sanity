@@ -23,14 +23,14 @@ export default function CommentsSection() {
   };
 
   return (
-    <div className="mt-8">
+    <div className="mt-8 ">
       <h2 className="text-2xl font-bold text-slate-900 font-playfair mb-4">Comments</h2>
       <ul className="space-y-2">
         {comments.length === 0 ? (
-          <li className="text-sm text-gray-500">No comments yet... Be the first to comment!</li>
+          <li className="text-sm text-red-500">No comments yet... Be the first to comment!</li>
         ) : (
           comments.map((comment, index) => (
-            <li key={index} className="bg-[#EAEAEA] text-[#333333] p-2 rounded">
+            <li key={index} className="bg-[#e6d2c9] text-[#333333] p-2 rounded">
               <p className="font-bold text-black">{comment.name}</p>
               <p>{comment.text}</p>
             </li>

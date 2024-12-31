@@ -47,7 +47,7 @@ const BlogData= {
       {
         name: "date",
         title: "Date",
-        type: "datetime",
+        type: "date",
         description: "The publish date of the blog post.",
       },
       {

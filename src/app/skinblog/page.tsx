@@ -1,26 +1,11 @@
-import { client } from '@/sanity/lib/client';
 import React from 'react';
 import SkinCard from '../components/SkinCard';
+import { getPosts } from '@/sanity/fetch';
 
 const SkinBlog = async () => {
 
-  const fetchCategories = await client.fetch(`
-    *[_type == "category"]{
-      title,
-      "posts": *[_type == "blogPost" && references(^._id)]{
-        title,
-        slug,
-        image,
-        author->{
-          authorName
-        },
-         publishedAt,
-        category->{
-          title
-        }
-      }
-    }
-  `);
+  const fetchCategories:any = await getPosts();
+ 
 
 
 

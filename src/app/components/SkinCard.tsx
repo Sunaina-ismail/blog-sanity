@@ -25,7 +25,7 @@ export default function SkinCard({blog}:{blog:skinCardType}) {
             <h2 className="text-base md:text-lg font-semibold text-gray-800 hover:text-orange-400">
              {blog.title}
             </h2>
-            <p className="text-base font-medium text-green-600 mt-2">{blog.publishedAt}</p>
+            <p className="text-base font-medium text-green-600 mt-2">{blog.date}</p>
           </div>
     </div>
     </Link>

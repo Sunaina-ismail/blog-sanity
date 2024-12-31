@@ -6,6 +6,7 @@ export interface skinCardType{
             _type:string;
         };
     };
+    date:string;
     category:{title:string};
     publishedAt:string;
     slug:{
@@ -13,6 +14,8 @@ export interface skinCardType{
     };
     author:{authorName:string};
 }
+
+
 
 export interface skinCardDetailType{
     title:string,
@@ -27,6 +30,7 @@ export interface skinCardDetailType{
     slug:{
         current :string;
     };
+    date:string;
     author:{authorName:string};
     longPost: string | undefined;
 }

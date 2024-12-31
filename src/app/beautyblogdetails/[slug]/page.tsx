@@ -19,7 +19,7 @@ const beautyblogdetails = async ({ params }: { params : Promise<Params> }) => {
   }
 
   return (
-    <div className="my-4 md:mt-10 p-4 max-w-6xl mx-auto">
+    <div className="my-4 md:mt-10 p-4 max-w-5xl mx-auto">
         
       <div className="relative max-w-full h-72 md:h-96 mb-6">
         <Image
@@ -33,7 +33,7 @@ const beautyblogdetails = async ({ params }: { params : Promise<Params> }) => {
       <h1 className="text-2xl md:text-4xl text-[#a77b55ef] font-bold mb-4">{blog.title}</h1>
       <p className="mb-6 text-sm">
   
-  On {new Date(blog.publishedAt).toDateString()}
+  On {blog.date}
   
 </p>
      <article className="prose lg:prose-xl">
